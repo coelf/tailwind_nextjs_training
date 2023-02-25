@@ -6,6 +6,7 @@ function Header() {
         <header className='p-5 m-5 bg-gray-400 text-2xl flex shadow-xl rounded-3xl'>
             <Link href="/" className='p-2'>Home</Link>
             <Link href="/todos" className='p-2'>Todos</Link>
+            <Link href="/search" className='p-2'>Search</Link>
         </header>
     )
 }

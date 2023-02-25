@@ -10,7 +10,7 @@ const fetchTodos = async () => {
 
 async function TodosList() {
     const todos = await fetchTodos();
-    return <>
+    return (<>
         {
             todos.map((todo) =>
                 <p key={todo.id}>
@@ -18,7 +18,7 @@ async function TodosList() {
                 </p>
             )
         }
-    </>
+    </>);
 }
 
 export default TodosList

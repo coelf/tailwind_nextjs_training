@@ -28,7 +28,9 @@ async function Todo({ params: { todoId } }: PageProps) {
             <p>#{todo.id}: {todo.title}</p>
 
             <p> Completed : {todo.completed ? "Yes" : "No"}</p>
-            <p className='border-t border-dotted mt-5 text-right'>By User :{todo.userId}</p>
+            <p className='border-t border-dotted mt-5 text-right'>
+                By User :{todo.userId}
+            </p>
         </div>
     )
 }
