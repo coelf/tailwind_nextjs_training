@@ -13,17 +13,19 @@ function Card({ type,
     return (
         <>
             <div className="
+            flex flex-col
               rounded-xl
             bg-slate-700
             hover:bg-violet-800
              duration-500
              text-white" >
                 {/* upper container */}
-                <div className="p-8 mx-3 mt-3 rounded-t-xl bg-slate-800">
+                <div className="p-8 mx-3 mt-3 rounded-t-xl bg-slate-800 grow flex flex-col">
                     <div className="text-center uppercase">{type}</div>
                     <h2 className='mt-10 font-serif text-5xl text-center'> {storage} GB</h2>
                     <h3 className="mt-2 text-center">${price}/Month</h3>
-                    <div className="flex justify-center">
+                    <div className='grow'></div>
+                    <div className="flex justify-center grow-0">
                         <a href="#" className="inline-block px-10 py-3 my-6 text-center border
                              border-violet-600 rounded-lg
                              duration-200
@@ -34,9 +36,9 @@ function Card({ type,
                     </div>
                 </div>
                 {/* border */}
-                <div className="border-t border-slate-700">
+                <div className="border-t border-slate-700 grow-0">
                     {/* lower container */}
-                    <div className="p-8 mx-3 mb-3 rounded-b-xl bg-slate-800" >
+                    <div className="p-8 mx-3 mb-3 rounded-b-xl bg-slate-800 " >
                         {/* list container */}
                         {features ? features.split(",").map((text) => (
                             <div key={text} className="flex flex-col space-y-2">
