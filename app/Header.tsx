@@ -8,6 +8,7 @@ function Header() {
             <Link href="/todos" className='p-2'>Todos</Link>
             <Link href="/search" className='p-2'>Search</Link>
             <Link href="/subscribe" className='p-2'>Email Subscribe</Link>
+            <Link href="/pricing_card" className='p-2'>Pricing Card</Link>
         </header>
     )
 }
