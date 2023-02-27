@@ -7,6 +7,7 @@ function Header() {
             <Link href="/" className='p-2'>Home</Link>
             <Link href="/todos" className='p-2'>Todos</Link>
             <Link href="/search" className='p-2'>Search</Link>
+            <Link href="/subscribe" className='p-2'>Email Subscribe</Link>
         </header>
     )
 }
