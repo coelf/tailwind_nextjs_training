@@ -10,6 +10,7 @@ function Header() {
             <Link href="/subscribe" className='menu-nav'>Email Subscribe</Link>
             <Link href="/pricing_card" className='menu-nav'>Pricing Card</Link>
             <Link href="/product_modal" className='menu-nav'>Product Modal</Link>
+            <Link href="/image_gallery" className='menu-nav'>Gallery</Link>
         </header>
     )
 }
