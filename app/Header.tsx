@@ -3,12 +3,13 @@ import Link from "next/link"
 
 function Header() {
     return (
-        <header className='p-5 m-5 bg-gray-400 text-2xl flex shadow-xl rounded-3xl'>
-            <Link href="/" className='p-2'>Home</Link>
-            <Link href="/todos" className='p-2'>Todos</Link>
-            <Link href="/search" className='p-2'>Search</Link>
-            <Link href="/subscribe" className='p-2'>Email Subscribe</Link>
-            <Link href="/pricing_card" className='p-2'>Pricing Card</Link>
+        <header className='p-5 m-5 bg-gray-300 text-2xl flex flex-row shadow-xl rounded-3xl'>
+            <Link href="/" className='menu-nav'>Home</Link>
+            <Link href="/todos" className='menu-nav'>Todos</Link>
+            <Link href="/search" className='menu-nav'>Search</Link>
+            <Link href="/subscribe" className='menu-nav'>Email Subscribe</Link>
+            <Link href="/pricing_card" className='menu-nav'>Pricing Card</Link>
+            <Link href="/product_modal" className='menu-nav'>Product Modal</Link>
         </header>
     )
 }

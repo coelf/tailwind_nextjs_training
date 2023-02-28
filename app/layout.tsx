@@ -17,7 +17,7 @@ export default function RootLayout({
       <head>
         <title>SandBox Project</title>
       </head>
-      <body>
+      <body className='bg-slate-200'>
         <Header />
         {children}
       </body>
