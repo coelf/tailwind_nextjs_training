@@ -11,6 +11,7 @@ function Header() {
             <Link href="/pricing_card" className='menu-nav'>Pricing Card</Link>
             <Link href="/product_modal" className='menu-nav'>Product Modal</Link>
             <Link href="/image_gallery" className='menu-nav'>Gallery</Link>
+            <Link href="/login" className='menu-nav'>Login</Link>
         </header>
     )
 }
