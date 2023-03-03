@@ -1,18 +1,38 @@
 import React from 'react'
 import Link from "next/link"
+import { url } from 'inspector'
 
 function Header() {
     return (
-        <header className='p-5 m-5 bg-gray-300 text-2xl flex flex-row shadow-xl rounded-3xl'>
-            <Link href="/" className='menu-nav'>Home</Link>
-            <Link href="/todos" className='menu-nav'>Todos</Link>
-            <Link href="/search" className='menu-nav'>Search</Link>
-            <Link href="/subscribe" className='menu-nav'>Email Subscribe</Link>
-            <Link href="/pricing_card" className='menu-nav'>Pricing Card</Link>
-            <Link href="/product_modal" className='menu-nav'>Product Modal</Link>
-            <Link href="/image_gallery" className='menu-nav'>Gallery</Link>
-            <Link href="/login" className='menu-nav'>Login</Link>
-        </header>
+        <header className='p-5 m-5  text-2xl flex flex-row shadow-xl rounded-3xl'>
+
+            <div className='flex flex-col md:flex-row md:space-y-0 md:space-x-4 md:justify-between'>
+                {
+
+
+                    [
+                        { url: "/", title: "Home" },
+                        { url: "/todos", title: "Todos" },
+                        { url: "/search", title: "Search" },
+                        { url: "/subscribe", title: "Email Subscribe" },
+                        { url: "/pricing_card", title: "Pricing Card" },
+                        { url: "/product_modal", title: "Product Modal" },
+                        { url: "/image_gallery", title: "Gallery" },
+                        { url: "/login", title: "Login" },
+                        { url: "/clipboard", title: "ClipBoard" }
+                    ]
+                        .map(
+                            ({ url, title }) => (
+                                <div className='group'>
+
+                                    <Link href={url}>{title}</Link>
+                                    <div className="mx-2-mt-2 duration-300 opacity-0 border-b-2 border-black group-hover:opacity-90" ></div>
+                                </div >
+                            )
+                        )
+                }
+            </div >
+        </header >
     )
 }
 
