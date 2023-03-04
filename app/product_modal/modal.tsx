@@ -15,7 +15,7 @@ function Modal() {
          md:m-0 md:p-16
          '>
             <div>
-                <Image src={headphone} className="mx-auto duration-200 w-60 hover:scale-105"></Image>
+                <Image src={headphone} alt="headphone" className="mx-auto duration-200 w-60 hover:scale-105"></Image>
             </div>
             {/** content */}
             <div className="flex flex-col space-y-6 text-center md:text-left" >
