@@ -4,7 +4,7 @@ import { url } from 'inspector'
 
 function Header() {
     return (
-        <header className='p-5 m-5  text-2xl flex flex-row shadow-xl rounded-3xl'>
+        <header className='p-4 pt-2 m-2  text-2xl flex flex-row shadow-xl rounded-3xl'>
 
             <div className='flex flex-col md:flex-row md:space-y-0 md:space-x-4 md:justify-between'>
                 {

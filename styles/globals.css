@@ -7,3 +7,9 @@
     @apply hover:bg-slate-500 hover:text-white hover:rounded-3xl md:space-x-4 md:p-3 md:m-3;
   }
 }
+
+@layer base {
+  h3 {
+    @apply mb-8 text-4xl font-bold text-darkGrayishBlue;
+  }
+}
