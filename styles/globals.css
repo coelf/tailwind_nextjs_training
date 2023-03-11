@@ -6,6 +6,10 @@
   .menu-nav {
     @apply hover:bg-slate-500 hover:text-white hover:rounded-3xl md:space-x-4 md:p-3 md:m-3;
   }
+
+  .btn {
+    @apply px-10 py-2 my-0 font-bold tracking-widest uppercase border-2 border-black hover:bg-black hover:text-white;
+  }
 }
 
 @layer base {
