@@ -1,38 +1,49 @@
 import React from 'react'
 import Link from "next/link"
-import { url } from 'inspector'
+import MainMenu from './mainmenu'
 
 function Header() {
     return (
-        <header className='p-4 pt-2 m-2  text-2xl flex flex-row shadow-xl rounded-3xl'>
 
-            <div className='flex flex-col md:flex-row md:space-y-0 md:space-x-4 md:justify-between'>
-                {
+        <header>
+            {/* className='p-4 pt-2 m-2  text-2xl flex flex-row shadow-xl rounded-3xl' */}
+            <MainMenu />
+
+            <div>
+
+            </div>
+
+            <div id="main-menu" className="absolute top-0 right-0 flex flex-col py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black">
+
+                <div className='flex flex-col md:space-y-0 md:space-x-4 md:justify-between'>
+                    {
+                        [
+                            { url: "/", title: "Home" },
+                            { url: "/todos", title: "Todos" },
+                            { url: "/search", title: "Search" },
+                            { url: "/subscribe", title: "Email Subscribe" },
+                            { url: "/pricing_card", title: "Pricing Card" },
+                            { url: "/product_modal", title: "Product Modal" },
+                            { url: "/image_gallery", title: "Gallery" },
+                            { url: "/login", title: "Login" },
+                            { url: "/clipboard", title: "ClipBoard" },
+                            { url: "/loopstudios", title: "Loopstudios" }
+                        ]
+                            .map(
+                                ({ url, title }) => (
 
 
-                    [
-                        { url: "/", title: "Home" },
-                        { url: "/todos", title: "Todos" },
-                        { url: "/search", title: "Search" },
-                        { url: "/subscribe", title: "Email Subscribe" },
-                        { url: "/pricing_card", title: "Pricing Card" },
-                        { url: "/product_modal", title: "Product Modal" },
-                        { url: "/image_gallery", title: "Gallery" },
-                        { url: "/login", title: "Login" },
-                        { url: "/clipboard", title: "ClipBoard" },
-                        { url: "/loopstudios", title: "Loopstudios" }
-                    ]
-                        .map(
-                            ({ url, title }) => (
-                                <div className='group'>
+                                    <div className="group flex items-center justify-between font-bold text-white">
 
-                                    <Link href={url}>{title}</Link>
-                                    <div className="mx-2-mt-2 duration-300 opacity-0 border-b-2 border-black group-hover:opacity-90" ></div>
-                                </div >
+                                        <Link href={url}>{title}</Link>
+                                        <div className="mx-2-mt-2 duration-300 opacity-0 border-b-2 border-white group-hover:opacity-90" ></div>
+                                    </div>
+                                )
                             )
-                        )
-                }
-            </div >
+                    }
+                </div >
+
+            </div>
         </header >
     )
 }

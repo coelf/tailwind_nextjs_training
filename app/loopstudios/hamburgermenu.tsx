@@ -16,16 +16,16 @@ function HamburgerMenu() {
     }, []);
     return (
 
-        <div className="md:hidden">
-            <button
-                id="menu-btn"
-                type="button"
-                className='z-40 block hamburger md:hidden focus:outline-none' >
-                <span className='hamburger-top'></span>
-                <span className='hamburger-middle'></span>
-                <span className='hamburger-bottom'></span>
-            </button>
-        </div>
+
+        <button
+            id="menu-btn"
+            type="button"
+            className='z-40 block hamburger focus:outline-none' >
+            <span className='hamburger-top'></span>
+            <span className='hamburger-middle'></span>
+            <span className='hamburger-bottom'></span>
+        </button>
+
     )
 }
 
