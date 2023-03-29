@@ -27,7 +27,8 @@ function Header() {
                             { url: "/image_gallery", title: "Gallery" },
                             { url: "/login", title: "Login" },
                             { url: "/clipboard", title: "ClipBoard" },
-                            { url: "/loopstudios", title: "Loopstudios" }
+                            { url: "/loopstudios", title: "Loopstudios" },
+                            { url: "/shortly", title: "shortly" }
                         ]
                             .map(
                                 ({ url, title }) => (
